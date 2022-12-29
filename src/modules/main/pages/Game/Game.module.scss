@@ -1,0 +1,173 @@
+@import '../../../../assets/styles/variables.scss';
+@import '../../../../assets/fonts/fonts.scss';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* for all screens */
+.canvas {
+  display: none;
+}
+
+.help {
+  display: none;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+}
+
+/* only when orientation is in landscape mode */
+@media all and (orientation: landscape) {
+  .restart {
+    position: absolute;
+    z-index: 1;
+    caret-color: transparent;
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Cotton-Cloud';
+      font-weight: 700;
+      font-size: calc(150 * $ratio-big);
+      margin-top: calc(150 * $ratio-big);
+      color: white;
+      text-shadow: 5px 5px 5px rgba(50, 50, 150);
+      caret-color: transparent;
+    }
+    .form {
+      display: flex;
+      position: relative;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      .button {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        border: none;
+        background: none;
+        margin: 0;
+        padding: 0;
+
+        .desk {
+          width: 100%;
+        }
+
+        .score {
+          position: absolute;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 50%;
+          margin: 0;
+          padding: 0;
+          color: $color-wood;
+          border: transparent;
+          background: transparent;
+          font-family: 'Comfortaa';
+          font-weight: 400;
+          font-size: calc(26 * $ratio-big);
+          line-height: calc(26 * $ratio-big);
+          caret-color: transparent;
+        }
+
+        .confirm {
+          position: absolute;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 50%;
+          cursor: pointer;
+          margin: 0;
+          padding: 0;
+          color: $color-wood;
+          border: transparent;
+          background: transparent;
+          font-family: 'Comfortaa';
+          font-weight: 400;
+          font-size: calc(26 * $ratio-big);
+          line-height: calc(26 * $ratio-big);
+        }
+      }
+    }
+  }
+
+  .canvas {
+    display: block;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+  }
+
+  .volumeOnInvalid {
+    display: none;
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    z-index: 2;
+  }
+
+  .volumeOnValid {
+    display: flex;
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    z-index: 2;
+  }
+
+  .volumeOffInvalid {
+    display: none;
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    z-index: 2;
+  }
+
+  .volumeOffValid {
+    display: flex;
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    z-index: 2;
+  }
+}
+
+/* only when orientation is in portrait mode */
+@media all and (orientation: portrait) {
+  body {
+    background: black;
+  }
+
+  .help {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+}

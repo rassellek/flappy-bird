@@ -1,0 +1,74 @@
+@import '../../assets/styles/variables.scss';
+@import '../../assets/fonts/fonts.scss';
+
+/* for all screens */
+.root {
+  display: none;
+}
+
+.help {
+  display: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-image: url('../../assets/images/main.jpg');
+  background-size: cover;
+}
+
+/* only when orientation is in landscape mode */
+@media all and (orientation: landscape) {
+  .root {
+    display: block;
+    justify-content: center;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Cotton-Cloud';
+      font-weight: 700;
+      font-size: calc(150 * $ratio-big);
+      margin-top: calc(150 * $ratio-big);
+      color: white;
+      text-shadow: 5px 5px 5px rgba(50, 50, 150);
+    }
+    .footer {
+      position: absolute;
+      bottom: 0;
+      left: 5%;
+      font-family: 'Cotton-Cloud';
+      font-weight: 700;
+      font-size: calc(24 * $ratio-big);
+      margin-top: calc(150 * $ratio-big);
+      color: white;
+      text-shadow: 5px 5px 5px rgba(50, 100, 250);
+    }
+  }
+}
+
+/* only when orientation is in portrait mode */
+@media all and (orientation: portrait) {
+  body {
+    background-color: black;
+  }
+
+  .help {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+}

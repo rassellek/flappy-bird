@@ -1,0 +1,81 @@
+@import '../../../../../../assets/styles/variables.scss';
+@import '../../../../../../assets/fonts/fonts.scss';
+
+.root {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  height: 100%;
+  height: calc(40 * $ratio-big);
+  color: $color-wood;
+
+  font-family: 'Comfortaa';
+  font-weight: 400;
+  font-size: calc(26 * $ratio-big);
+  line-height: calc(26 * $ratio-big);
+}
+
+.errorMsg {
+  position: absolute;
+  top: calc(-25 * $ratio-big);
+  right: 0;
+  color: red;
+  pointer-events: none;
+}
+
+.inputDefault {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: calc(40 * $ratio-big);
+  padding-left: 0%;
+  border: transparent;
+  background: transparent;
+  color: $color-wood;
+  caret-color: $color-wood;
+}
+
+.inputDefault:focus {
+  color: $color-wood;
+  outline: none;
+}
+
+.inputError {
+  border: 2px solid red;
+}
+
+.inputDefault::placeholder {
+  color: $color-wood;
+  caret-color: transparent;
+}
+
+.label {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: calc(-10 * $ratio-big);
+  left: calc(5 * $ratio-big);
+  transform: translateY(-50%);
+  padding-left: calc(0 * var(--ratio-big));
+  opacity: 0;
+  color: $color-wood;
+  transition: 0.2s;
+  caret-color: transparent;
+
+  p {
+    color: red;
+  }
+}
+
+.inputDefault:focus + label,
+.inputDefault:focus:not(:placeholder-shown) + label {
+  opacity: 1;
+}
+
+.inputDefault:focus::-webkit-input-placeholder {
+  color: transparent;
+  transition: 0.2s;
+}
