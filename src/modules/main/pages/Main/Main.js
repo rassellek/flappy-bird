@@ -12,6 +12,7 @@ import s from './Main.module.scss'
 import { setUser, setBirdId } from 'modules/main/store/mainSlice'
 
 const Main = () => {
+  
   //Навигация
   const navigate = useNavigate()
 
@@ -103,12 +104,6 @@ const Main = () => {
                 Сonfirm
               </button>
             </div>
-            {/* <div className={s.button}>
-              <img className={s.desk} src={desk} />
-              <button className={s.confirm} onClick={() => navigate('/leaderboard')}>
-                Leaderboard
-              </button>
-            </div> */}
           </form>
         </div>
         <div className={classNames({ [s.start]: style }, { [s.main]: !style })}>

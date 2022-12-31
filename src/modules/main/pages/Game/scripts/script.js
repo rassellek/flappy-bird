@@ -166,16 +166,11 @@ const Canvas = (props) => {
 
     // При нажатии на какую-либо кнопку птичка подлетает
     document.addEventListener('keydown', moveUp)
+    document.addEventListener('touchstart', moveUp)
 
     function moveUp() {
       yPos -= 40
       fly.play()
-    }
-
-    //Перезапуск игры
-    function stop() {
-      ctx.fillStyle = '#000000'
-      ctx.fillRect(0, 0, canvas.width, canvas.height)
     }
 
     //Динамичная отрисовка

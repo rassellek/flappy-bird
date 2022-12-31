@@ -1,5 +1,5 @@
 {
-  "name": "flappy-bird-react",
+  "name": "flappy-bird",
   "homepage": "https://rassellek.github.io/flappy-bird",
   "version": "0.1.0",
   "private": true,
@@ -14,6 +14,7 @@
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-easyfullscreen": "^1.1.2",
     "react-redux": "^8.0.5",
     "react-router-dom": "^6.4.3",
     "react-scripts": "5.0.1",
