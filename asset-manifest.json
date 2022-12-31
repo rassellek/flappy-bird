@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/flappy-bird/static/css/main.bcbe1eb6.css",
+    "main.css": "/flappy-bird/static/css/main.dd7c42c9.css",
     "main.js": "/flappy-bird/static/js/main.ea82f211.js",
     "static/media/game.mp3": "/flappy-bird/static/media/game.ea4c2b2c81b88bc15a58.mp3",
     "static/media/Page404.png": "/flappy-bird/static/media/Page404.0d2f55e26d2e7794ac63.png",
@@ -41,17 +41,17 @@
     "static/media/Rotate.svg": "/flappy-bird/static/media/Rotate.09e9e1f226a5a35156a3bda7e0145fd4.svg",
     "static/media/Moon.svg": "/flappy-bird/static/media/Moon.b69078727524b7311a097d3c57e9c5b6.svg",
     "static/media/Dislike.svg": "/flappy-bird/static/media/Dislike.3aab637015f9bfa12739f102acac792f.svg",
-    "index.html": "/flappy-bird/index.html",
     "static/media/Search.svg": "/flappy-bird/static/media/Search.6773e3059bb5f9811142d8de442d5ab1.svg",
     "static/media/MinusBlack.svg": "/flappy-bird/static/media/MinusBlack.a3fcf6f1808e4fa4536a9c4d9e95b8ed.svg",
     "static/media/PlusBlack.svg": "/flappy-bird/static/media/PlusBlack.ab67289f2d977e205374fcd78eca9df4.svg",
+    "index.html": "/flappy-bird/index.html",
     "static/media/Like.svg": "/flappy-bird/static/media/Like.1fdfe75c934ebc265852dd4800a5761b.svg",
     "static/media/Entry.svg": "/flappy-bird/static/media/Entry.cf9c2a83db32d1ec5769a25da3c5e42f.svg",
-    "main.bcbe1eb6.css.map": "/flappy-bird/static/css/main.bcbe1eb6.css.map",
+    "main.dd7c42c9.css.map": "/flappy-bird/static/css/main.dd7c42c9.css.map",
     "main.ea82f211.js.map": "/flappy-bird/static/js/main.ea82f211.js.map"
   },
   "entrypoints": [
-    "static/css/main.bcbe1eb6.css",
+    "static/css/main.dd7c42c9.css",
     "static/js/main.ea82f211.js"
   ]
 }
