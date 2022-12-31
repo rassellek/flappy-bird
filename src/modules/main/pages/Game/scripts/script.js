@@ -345,8 +345,9 @@ const Canvas = (props) => {
           dispatch(setLeaders(leaderData))
           setList(list.push(leaderData))
           dispatch(setBoard(list))
+          dispatch(setGame(true))
           ctx.clearRect(0, 0, canvas.width, canvas.height)
-          canvas.style.display = 'none'
+          // canvas.style.display = 'none'
           return
         }
 
@@ -384,8 +385,9 @@ const Canvas = (props) => {
           dispatch(setLeaders(leaderData))
           setList(list.push(leaderData))
           dispatch(setBoard(list))
+          dispatch(setGame(true))
           ctx.clearRect(0, 0, canvas.width, canvas.height)
-          canvas.style.display = 'none'
+          // canvas.style.display = 'none'
           return
         }
 
