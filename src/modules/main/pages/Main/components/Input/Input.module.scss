@@ -6,7 +6,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 90%;
   height: 100%;
   height: calc(40 * $ratio-big);
   color: $color-wood;
@@ -78,4 +77,16 @@
 .inputDefault:focus::-webkit-input-placeholder {
   color: transparent;
   transition: 0.2s;
+}
+
+@media screen and (min-height: 769px) {
+  .root {
+    width: 90%;
+  }
+}
+
+@media screen and (max-height: 768px) {
+  .root {
+    width: 50%;
+  }
 }

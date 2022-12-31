@@ -44,6 +44,7 @@ button {
     position: absolute;
     z-index: 1;
     caret-color: transparent;
+    height: 100%;
     .header {
       display: flex;
       align-items: center;
@@ -51,7 +52,8 @@ button {
       font-family: 'Cotton-Cloud';
       font-weight: 700;
       font-size: calc(150 * $ratio-big);
-      margin-top: calc(150 * $ratio-big);
+      margin-top: calc(0 * $ratio-big);
+      height: 20%;
       color: white;
       text-shadow: 5px 5px 5px rgba(50, 50, 150);
       caret-color: transparent;
@@ -62,6 +64,7 @@ button {
       align-items: center;
       justify-content: center;
       flex-direction: column;
+      height: 80%;
 
       .button {
         position: relative;
@@ -69,13 +72,14 @@ button {
         align-items: center;
         justify-content: center;
         width: 50%;
+        height: 20%;
         border: none;
         background: none;
         margin: 0;
         padding: 0;
 
         .desk {
-          width: 100%;
+          width: 60%;
         }
 
         .score {

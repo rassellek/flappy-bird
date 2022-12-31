@@ -19,6 +19,9 @@
   .start {
     display: none;
   }
+}
+
+@media screen and (min-height: 769px) {
 
   .form {
     display: flex;
@@ -58,6 +61,71 @@
         line-height: calc(26 * $ratio-big);
       }
     }
+    .confirm {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50%;
+      border: none;
+      background: none;
+      cursor: pointer;
+      margin: 0;
+      padding: 0;
+      color: $color-wood;
+      border: transparent;
+      background: transparent;
+      font-family: 'Comfortaa';
+      font-weight: 400;
+      font-size: calc(26 * $ratio-big);
+      line-height: calc(26 * $ratio-big);
+    }
+  }
+}
+
+@media screen and (max-height: 768px) { 
+
+  .form {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 80%;
+    .button {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50%;
+      height: 20%;
+      border: none;
+      background: none;
+      cursor: pointer;
+      margin: 0;
+      padding: 0;
+      .desk {
+        width: 60%;
+      }
+      .select {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        height: 100%;
+        height: calc(40 * $ratio-big);
+        color: $color-wood;
+        border: transparent;
+        background: transparent;
+
+        font-family: 'Comfortaa';
+        font-weight: 400;
+        font-size: calc(26 * $ratio-big);
+        line-height: calc(26 * $ratio-big);
+      }
+    }
+
     .confirm {
       position: absolute;
       display: flex;

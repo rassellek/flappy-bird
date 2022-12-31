@@ -19,16 +19,16 @@ root.render(
   <Provider store={store}>
     <PersistGate loading={null} persistor={persistor}>
       <HashRouter>
-        <App>
-          <ErrorBoundary>
-            <Routes>
-              <Route path={'/'} element={<Main />} />
-              <Route path={'/game'} element={<Game />} />
-              <Route path={'/leaderboard'} element={<Leader />} />
-              <Route path={'*'} element={<Page404 />} />
-            </Routes>
-          </ErrorBoundary>
-        </App>
+          <App>
+            <ErrorBoundary>
+              <Routes>
+                <Route path={'/'} element={<Main />} />
+                <Route path={'/game'} element={<Game />} />
+                <Route path={'/leaderboard'} element={<Leader />} />
+                <Route path={'*'} element={<Page404 />} />
+              </Routes>
+            </ErrorBoundary>
+          </App>
       </HashRouter>
     </PersistGate>
   </Provider>

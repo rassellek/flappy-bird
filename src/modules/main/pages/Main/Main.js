@@ -88,7 +88,7 @@ const Main = () => {
                   setId(event.target.value)
                 }}
               >
-                <option value=''>--Please choose a hero--</option>
+                <option value=''>--Choose a hero--</option>
                 <option value='1'>Flappy Bird</option>
                 <option value='2'>Angry Bird</option>
                 <option value='3'>Suspicious Bird</option>
