@@ -9,15 +9,14 @@ import { Input } from './components/Index'
 import desk from '../../../../assets/images/desk.png'
 import s from './Main.module.scss'
 
-import { setUser, setBirdId } from 'modules/main/store/mainSlice'
+import { setUser, setBirdId, setGame } from 'modules/main/store/mainSlice'
 
 const Main = () => {
-  
   //Навигация
   const navigate = useNavigate()
 
   //Redux
-  const { user, birdId } = useSelector((state) => state.mainReducer)
+  const { user, birdId, gameIsRun } = useSelector((state) => state.mainReducer)
   const dispatch = useDispatch()
 
   const [name, setName] = useState('')
@@ -54,6 +53,7 @@ const Main = () => {
   }
 
   const start = () => {
+    dispatch(setGame(true))
     navigate('/game')
     window.location.reload()
   }

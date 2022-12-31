@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 
 import { useDispatch, useSelector } from 'react-redux'
-import { setUser, setBirdId, setScore } from 'modules/main/store/mainSlice'
+import { setUser, setBirdId, setScore, setGame } from 'modules/main/store/mainSlice'
 import { setLeaders, setBoard } from 'modules/main/store/leadersSlice'
 
 import flySound from '../../../../../assets/audio/fly_2.mp3'
@@ -11,7 +11,7 @@ import loseSound from '../../../../../assets/audio/lose.mp3'
 const Canvas = (props) => {
   const canvasRef = useRef(null)
 
-  const { user, birdId, scoreUser } = useSelector((state) => state.mainReducer)
+  const { user, birdId, scoreUser, gameIsRun } = useSelector((state) => state.mainReducer)
   const { leaders, board } = useSelector((state) => state.leadersReducer)
   const dispatch = useDispatch()
 
@@ -306,8 +306,9 @@ const Canvas = (props) => {
           dispatch(setLeaders(leaderData))
           setList(list.push(leaderData))
           dispatch(setBoard(list))
+          dispatch(setGame(false))
           ctx.clearRect(0, 0, canvas.width, canvas.height)
-          canvas.style.display = 'none'
+          // canvas.style.display = 'none'
           return
         }
 

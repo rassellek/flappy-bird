@@ -4,6 +4,7 @@ const initialState = {
   user: [],
   birdId: [],
   scoreUser: [],
+  gameIsRun: Boolean,
 }
 
 export const mainSlice = createSlice({
@@ -19,9 +20,12 @@ export const mainSlice = createSlice({
     setScore: (state, { payload }) => {
       state.scoreUser = payload
     },
+    setGame: (state, { payload }) => {
+      state.gameIsRun = payload
+    },
   },
 })
 
-export const { setUser, setBirdId, setScore } = mainSlice.actions
+export const { setUser, setBirdId, setScore, setGame } = mainSlice.actions
 
 export default mainSlice.reducer
