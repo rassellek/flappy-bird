@@ -49,7 +49,7 @@ const Game = () => {
   }
 
   console.log(gameIsRun)
-  
+
   return (
     <div className={s.root}>
       <div className={s.help}>
@@ -57,8 +57,6 @@ const Game = () => {
         <h1>Пожалуйста переверните устройство</h1>
       </div>
       {gameIsRun ? (
-        <Canvas className={s.canvas} />
-      ) : (
         <div className={s.restart}>
           <header className={s.header}>GAME OVER</header>
           <form className={s.form}>
@@ -86,6 +84,8 @@ const Game = () => {
             </div>
           </form>
         </div>
+      ) : (
+        <Canvas className={s.canvas} />
       )}
 
       <button
