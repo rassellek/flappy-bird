@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/flappy-bird/static/css/main.aba110f5.css",
+    "main.css": "/flappy-bird/static/css/main.bcbe1eb6.css",
     "main.js": "/flappy-bird/static/js/main.ea82f211.js",
     "static/media/game.mp3": "/flappy-bird/static/media/game.ea4c2b2c81b88bc15a58.mp3",
     "static/media/Page404.png": "/flappy-bird/static/media/Page404.0d2f55e26d2e7794ac63.png",
@@ -47,11 +47,11 @@
     "static/media/PlusBlack.svg": "/flappy-bird/static/media/PlusBlack.ab67289f2d977e205374fcd78eca9df4.svg",
     "static/media/Like.svg": "/flappy-bird/static/media/Like.1fdfe75c934ebc265852dd4800a5761b.svg",
     "static/media/Entry.svg": "/flappy-bird/static/media/Entry.cf9c2a83db32d1ec5769a25da3c5e42f.svg",
-    "main.aba110f5.css.map": "/flappy-bird/static/css/main.aba110f5.css.map",
+    "main.bcbe1eb6.css.map": "/flappy-bird/static/css/main.bcbe1eb6.css.map",
     "main.ea82f211.js.map": "/flappy-bird/static/js/main.ea82f211.js.map"
   },
   "entrypoints": [
-    "static/css/main.aba110f5.css",
+    "static/css/main.bcbe1eb6.css",
     "static/js/main.ea82f211.js"
   ]
 }
