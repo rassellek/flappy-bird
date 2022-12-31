@@ -45,7 +45,7 @@ const Game = () => {
   const restart = () => {
     document.location.reload()
     document.location.hash = 'game'
-    dispatch(setGame(true))
+    dispatch(setGame(false))
   }
 
   console.log(gameIsRun)

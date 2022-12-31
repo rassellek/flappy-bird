@@ -53,7 +53,7 @@ const Main = () => {
   }
 
   const start = () => {
-    dispatch(setGame(true))
+    dispatch(setGame(false))
     navigate('/game')
     window.location.reload()
   }
