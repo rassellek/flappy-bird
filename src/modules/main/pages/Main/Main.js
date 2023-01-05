@@ -55,7 +55,7 @@ const Main = () => {
   const start = () => {
     dispatch(setGame(false))
     navigate('/game')
-    document.location.reload(true)
+    document.location.reload()
   }
 
   return (
