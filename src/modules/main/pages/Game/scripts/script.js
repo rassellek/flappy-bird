@@ -20,7 +20,7 @@ const Canvas = (props) => {
   useEffect(() => {
     setList([...Array.from(board)])
   }, [])
-https://rassellek.github.io/flappy-bird/р
+
   const leaderData = {
     userName: '',
     pointsUser: 0,
@@ -307,8 +307,7 @@ https://rassellek.github.io/flappy-bird/р
           setList(list.push(leaderData))
           dispatch(setBoard(list))
           dispatch(setGame(true))
-          ctx.clearRect(0, 0, canvas.width, canvas.height)
-          // canvas.style.display = 'none'
+          // ctx.clearRect(0, 0, canvas.width, canvas.height)
           return
         }
 
@@ -346,8 +345,7 @@ https://rassellek.github.io/flappy-bird/р
           setList(list.push(leaderData))
           dispatch(setBoard(list))
           dispatch(setGame(true))
-          ctx.clearRect(0, 0, canvas.width, canvas.height)
-          // canvas.style.display = 'none'
+          // ctx.clearRect(0, 0, canvas.width, canvas.height)
           return
         }
 
@@ -386,8 +384,7 @@ https://rassellek.github.io/flappy-bird/р
           setList(list.push(leaderData))
           dispatch(setBoard(list))
           dispatch(setGame(true))
-          ctx.clearRect(0, 0, canvas.width, canvas.height)
-          // canvas.style.display = 'none'
+          // ctx.clearRect(0, 0, canvas.width, canvas.height)
           return
         }
 
