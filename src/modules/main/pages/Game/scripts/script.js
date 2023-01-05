@@ -20,7 +20,7 @@ const Canvas = (props) => {
   useEffect(() => {
     setList([...Array.from(board)])
   }, [])
-
+https://rassellek.github.io/flappy-bird/р
   const leaderData = {
     userName: '',
     pointsUser: 0,
