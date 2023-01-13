@@ -117,7 +117,7 @@ const Main = () => {
         <div className={classNames({ [s.start]: style }, { [s.main]: !style })}>
           <form className={s.form}>
             <div className={s.button}>
-              <img className={s.desk} src={desk} width={500} height={500} loading='lazy' />
+              <img className={s.desk} src={desk} loading='lazy' />
               <button type={'submit'} className={s.confirm} onClick={onStartButtonClick}>
                 Start game!
               </button>
