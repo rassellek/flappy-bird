@@ -12,16 +12,28 @@ export const mainSlice = createSlice({
   initialState,
   reducers: {
     setUser: (state, { payload }) => {
-      state.user = payload
+      return {
+        ...state,
+        user: payload,
+      }
     },
     setBirdId: (state, { payload }) => {
-      state.birdId = payload
+      return {
+        ...state,
+        birdId: payload,
+      }
     },
     setScore: (state, { payload }) => {
-      state.scoreUser = payload
+      return {
+        ...state,
+        scoreUser: payload,
+      }
     },
     setGame: (state, { payload }) => {
-      state.gameIsRun = payload
+      return {
+        ...state,
+        gameIsRun: payload,
+      }
     },
   },
 })

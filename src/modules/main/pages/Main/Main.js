@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useState } from 'react'
 import classNames from 'classnames'
 import { useDispatch, useSelector } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
@@ -58,6 +58,14 @@ const Main = () => {
     document.location.reload()
   }
 
+  const onConfirmButtonClick = () => {
+    confirm()
+  }
+
+  const onStartButtonClick = () => {
+    start()
+  }
+
   return (
     <MainLayout>
       <div className={s.root}>
@@ -69,9 +77,9 @@ const Main = () => {
                 value={name}
                 placeholder={'Inter your name'}
                 name={'name'}
-                onChange={(event) => {
+                onChange={(target) => {
                   setIsNameInvalid(false)
-                  setName(event.target.value)
+                  setName(target.value)
                 }}
                 isInvalid={isNameInvalid}
                 errorMessage={isErrorNameMessage}
@@ -100,7 +108,7 @@ const Main = () => {
 
             <div className={s.button}>
               <img className={s.desk} src={desk} />
-              <button type={'submit'} className={s.confirm} onClick={() => confirm()}>
+              <button type={'submit'} className={s.confirm} onClick={onConfirmButtonClick}>
                 Сonfirm
               </button>
             </div>
@@ -109,8 +117,8 @@ const Main = () => {
         <div className={classNames({ [s.start]: style }, { [s.main]: !style })}>
           <form className={s.form}>
             <div className={s.button}>
-              <img className={s.desk} src={desk} />
-              <button type={'submit'} className={s.confirm} onClick={() => start()}>
+              <img className={s.desk} src={desk} width={500} height={500} loading='lazy' />
+              <button type={'submit'} className={s.confirm} onClick={onStartButtonClick}>
                 Start game!
               </button>
             </div>

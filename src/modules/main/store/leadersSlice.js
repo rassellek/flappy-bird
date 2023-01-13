@@ -13,10 +13,16 @@ export const leadersSlice = createSlice({
   initialState,
   reducers: {
     setLeaders: (state, { payload }) => {
-      state.leaders = payload
+      return {
+        ...state,
+        leaders: payload,
+      }
     },
     setBoard: (state, { payload }) => {
-      state.board = payload
+      return {
+        ...state,
+        board: payload,
+      }
     },
   },
 })
